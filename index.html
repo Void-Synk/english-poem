@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Composed upon Westminster Bridge — Grade 10 English</title>
+<style>
+:root{--ink:#172b3b;--muted:#5d6b73;--cream:#f7f4ec;--gold:#c89e55;--teal:#2e6b70;--paper:#fffdf8;--line:#e5dfd2;--shadow:0 18px 50px rgba(20,38,49,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink)}
+body{overflow-x:hidden}.topbar{height:70px;padding:0 clamp(16px,4vw,56px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(255,253,248,.92);gap:16px}
+.brand{font-weight:800;letter-spacing:.12em;font-size:.78rem;text-transform:uppercase}.brand span{color:var(--gold)}.topright{font-size:.82rem;color:var(--muted)}
+.deck{max-width:1280px;margin:auto;padding:22px clamp(14px,3vw,36px) 24px}.progressrow{display:flex;align-items:center;gap:16px;margin-bottom:15px}.progress-label{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+#progress{appearance:none;height:5px;border-radius:99px;background:#ded8cb;flex:1;cursor:pointer;accent-color:var(--teal)}#progress::-webkit-slider-thumb{appearance:none;width:15px;height:15px;border-radius:50%;background:var(--teal);border:3px solid white;box-shadow:0 0 0 1px var(--teal)}
+#counter{font-variant-numeric:tabular-nums;font-size:.8rem;color:var(--muted);white-space:nowrap}
+.stage{position:relative;min-height:min(690px,calc(100vh - 180px));background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.slide{display:none;min-height:min(690px,calc(100vh - 180px));padding:clamp(24px,5vw,66px);animation:enter .48s cubic-bezier(.2,.7,.2,1) both}.slide.active{display:block}
+@keyframes enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:800;margin-bottom:14px}
+h1,h2,h3,p{margin-top:0}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(2.6rem,6.5vw,5.8rem);line-height:.98;max-width:800px;margin-bottom:20px}h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin-bottom:18px}h3{font-size:1rem;margin-bottom:9px}
+.lead{font-size:clamp(1.02rem,1.6vw,1.28rem);line-height:1.7;color:#445660;max-width:760px}.small{font-size:.86rem;color:var(--muted);line-height:1.6}.rule{width:68px;height:3px;background:var(--gold);margin:24px 0}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px;min-height:510px}.heroimg{height:440px;border-radius:16px;overflow:hidden;position:relative;background:#d8e1df}.heroimg img{width:100%;height:100%;object-fit:cover;display:block}.heroimg:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(12,32,43,.48))}
+.image-caption{position:absolute;bottom:16px;left:18px;right:18px;color:white;z-index:1;font-size:.78rem}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.pill{padding:8px 12px;border:1px solid var(--line);border-radius:99px;font-size:.78rem;color:#52636b;background:#fff}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.card{padding:22px;border:1px solid var(--line);border-radius:15px;background:#fffefa}.card p:last-child{margin-bottom:0}.portrait{width:100%;max-height:430px;object-fit:cover;object-position:top;border-radius:14px;background:#e8e0d0}
+.quote{font-family:Georgia,serif;font-size:clamp(1.15rem,2.2vw,1.8rem);line-height:1.55;color:#2d4e53;border-left:3px solid var(--gold);padding:4px 0 4px 22px;margin:22px 0}
+.poem-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:start}.poem-lines{font-family:Georgia,serif;font-size:clamp(1.05rem,1.6vw,1.32rem);line-height:1.8;white-space:pre-line;background:#f5f0e5;padding:24px;border-radius:14px;border:1px solid #e7decb}.vocab{margin-top:16px}.vocab-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.word{padding:13px 14px;background:#fff;border:1px solid var(--line);border-radius:10px;font-size:.88rem;line-height:1.5}.word b{display:block;color:var(--teal);margin-bottom:3px}.section-number{font-family:Georgia,serif;color:#d2c7b2;font-size:3rem;line-height:1;margin-bottom:12px}
+.theme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.theme{padding:20px;border-radius:14px;background:#f5f0e5;border:1px solid #e9e0d0}.theme .symbol{font-size:1.4rem;color:var(--gold);margin-bottom:12px}.theme p{font-size:.9rem;line-height:1.6;color:#56646a;margin-bottom:0}
+ul.clean{padding-left:20px;line-height:1.85;color:#46575f}.footer-note{font-size:.76rem;color:#829096;margin-top:22px}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 2px 0}.navgroup{display:flex;gap:10px}.btn{border:1px solid #cfc8ba;border-radius:10px;background:var(--paper);color:var(--ink);font:inherit;font-weight:700;padding:12px 17px;cursor:pointer;transition:transform .18s,background .18s,border-color .18s;min-height:46px}.btn:hover{transform:translateY(-2px);border-color:var(--teal)}.btn.primary{background:var(--teal);color:white;border-color:var(--teal)}.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}.dots{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}.dot{width:9px;height:9px;border:0;border-radius:99px;background:#d7d0c2;cursor:pointer;padding:0}.dot.active{width:24px;background:var(--teal)}
+a{color:var(--teal)}.sources{font-size:.82rem;line-height:1.8;overflow-wrap:anywhere}
+@media(max-width:800px){.hero,.columns,.poem-layout{grid-template-columns:1fr}.hero{gap:24px}.heroimg{height:280px}.portrait{max-height:330px;object-position:center 25%}.theme-grid{grid-template-columns:1fr}.slide{padding:26px 22px}.stage,.slide{min-height:620px}.vocab-grid{grid-template-columns:1fr 1fr}.topright{display:none}}
+@media(max-width:480px){.vocab-grid{grid-template-columns:1fr}.controls{align-items:stretch;flex-direction:column}.navgroup{display:grid;grid-template-columns:1fr 1fr}.dots{order:-1}.btn{padding:11px}.stage,.slide{min-height:700px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+:focus-visible{outline:3px solid #c89e55;outline-offset:3px}
+.btn:focus-visible,.dot:focus-visible,#progress:focus-visible{outline:3px solid #c89e55;outline-offset:4px}
+img{color:transparent}
+
+
+
+/* Immersive visual layer */
+body{
+  background:
+    radial-gradient(ellipse at 12% 8%,rgba(200,158,85,.15),transparent 34%),
+    radial-gradient(ellipse at 92% 78%,rgba(46,107,112,.12),transparent 35%),
+    var(--cream);
+}
+.topbar{position:relative;z-index:2;backdrop-filter:none}
+.brand{letter-spacing:.16em}
+.deck{position:relative}
+.deck:before,.deck:after{
+  content:"";position:fixed;pointer-events:none;z-index:0;border-radius:50%;
+  filter:blur(1px);opacity:.35
+}
+.deck:before{width:230px;height:230px;right:-90px;top:18%;background:radial-gradient(circle,rgba(200,158,85,.2),transparent 70%);animation:orbFloat 13s ease-in-out infinite}
+.deck:after{width:280px;height:280px;left:-120px;bottom:4%;background:radial-gradient(circle,rgba(46,107,112,.16),transparent 70%);animation:orbFloat 16s ease-in-out infinite reverse}
+.stage{isolation:isolate}
+.stage:before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.23;
+  background-image:radial-gradient(rgba(200,158,85,.55) .8px,transparent .8px);
+  background-size:26px 26px;mask-image:linear-gradient(120deg,black,transparent 65%);
+}
+.slide{position:relative;z-index:1;overflow:hidden}
+.slide.active{animation:slideCinematic .72s cubic-bezier(.18,.72,.2,1) both}
+.slide.active .eyebrow{animation:floatIn .65s .08s both}
+.slide.active h1,.slide.active h2{animation:floatIn .78s .12s both}
+.slide.active .lead{animation:floatIn .8s .22s both}
+.slide.active .card,.slide.active .theme,.slide.active .poem-lines,.slide.active .word,.slide.active .heroimg,.slide.active .portrait{
+  animation:floatIn .72s .18s both;
+}
+.slide.active .card:nth-child(2),.slide.active .theme:nth-child(2){animation-delay:.26s}
+.slide.active .card:nth-child(3),.slide.active .theme:nth-child(3){animation-delay:.34s}
+@keyframes slideCinematic{from{opacity:0;transform:translateY(22px) scale(.988);filter:blur(3px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes floatIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes orbFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(14px,-22px,0)}}
+.hero h1{position:relative}
+.hero h1:after{content:"";display:block;width:0;height:3px;background:var(--gold);margin-top:20px;animation:lineGrow .9s .5s ease-out forwards}
+@keyframes lineGrow{to{width:92px}}
+.heroimg{box-shadow:0 22px 48px rgba(20,38,49,.18);transform:translateZ(0)}
+.heroimg img,.portrait{transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .6s}
+.heroimg:hover img{transform:scale(1.045);filter:saturate(1.08)}
+.card,.theme,.word{transition:transform .24s ease,border-color .24s,box-shadow .24s}
+.card:hover,.theme:hover,.word:hover{transform:translateY(-4px);border-color:rgba(46,107,112,.45);box-shadow:0 12px 26px rgba(20,38,49,.07)}
+.poem-lines{box-shadow:inset 4px 0 0 rgba(200,158,85,.7);transition:box-shadow .25s}
+.poem-lines:hover{box-shadow:inset 7px 0 0 var(--gold)}
+.quote{animation:quoteGlow 5s ease-in-out infinite alternate}
+@keyframes quoteGlow{from{border-left-color:var(--gold)}to{border-left-color:var(--teal)}}
+.progressrow{position:relative;z-index:2}
+#progress{height:6px}
+.controls{position:relative;z-index:2}
+.btn{transition:transform .2s ease,background .2s,border-color .2s,box-shadow .2s}
+.btn.primary{box-shadow:0 7px 16px rgba(46,107,112,.18)}
+.btn.primary:hover{box-shadow:0 10px 22px rgba(46,107,112,.28)}
+.dot{transition:width .25s ease,background .25s}
+.image-fallback{border-radius:14px}
+@media(max-width:800px){
+  .deck:before,.deck:after{position:absolute;width:150px;height:150px}
+  .slide.active .card,.slide.active .theme,.slide.active .poem-lines,.slide.active .word{animation-delay:.06s}
+}
+@media(prefers-reduced-motion:reduce){
+  .deck:before,.deck:after,.quote{animation:none!important}
+  .slide.active,.slide.active *{animation:none!important;transition:none!important}
+}
+
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">LITERATURE <span> / </span> GRADE 10</div><div class="topright">A poetic journey through London at dawn</div></header>
+<main class="deck">
+  <div class="progressrow"><span class="progress-label">Lesson progress</span><input id="progress" type="range" min="0" max="7" value="0" step="1" aria-label="Choose slide"><span id="counter">01 / 09</span></div>
+  <section class="stage" aria-live="polite">
+    <article class="slide active">
+      <div class="hero">
+        <div><div class="eyebrow">Grade 10 English · Poetry</div><h1>Composed upon Westminster Bridge</h1><p class="lead">September 3, 1802</p><div class="rule"></div><p class="lead">A quiet morning, a sleeping city, and a poet who discovers extraordinary beauty in an ordinary view of London.</p><div class="meta"><span class="pill">William Wordsworth</span><span class="pill">Petrarchan sonnet</span><span class="pill">Nature &amp; city</span></div></div>
+        <div class="heroimg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Westminster%20Bridge%20at%20sunrise%2C%202016.jpg" alt="Westminster Bridge at sunrise"><div class="image-caption">Westminster Bridge at sunrise · Wikimedia Commons</div></div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">01 · Meet the poet</div><div class="columns">
+        <div><h2>William Wordsworth</h2><p class="lead">1770–1850 · English Romantic poet</p><div class="rule"></div><p>Wordsworth was one of the leading poets of the English Romantic movement. His poetry often explores the beauty of nature, ordinary experiences, memory, emotion, and the relationship between people and the world around them.</p><p>He believed that close attention to the natural world could deepen human feeling and understanding. In this poem, he applies that sensitivity to a city: London appears almost as peaceful and beautiful as a natural landscape.</p><div class="card"><h3>Literary context</h3><p class="small">Romantic poetry values personal feeling, imagination, nature, and the wonder found in everyday sights.</p></div></div>
+        <div><img class="portrait" src="https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20William%20Wordsworth%20%284671069%29.jpg" alt="Portrait of William Wordsworth"></div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">02 · Before you read</div><h2>Setting, form &amp; central idea</h2><div class="columns">
+        <div class="card"><h3>The setting</h3><p>Westminster Bridge in London, early in the morning on 3 September 1802. The city is unusually quiet, and the view stretches across buildings, river, fields, and sky.</p><h3>Form</h3><p>A <b>Petrarchan sonnet</b>: 14 lines, traditionally organised into an octave (8 lines) and a sestet (6 lines). The poem uses a formal, musical structure to express a moment of wonder.</p></div>
+        <div class="card"><h3>Central idea</h3><p>The speaker feels that the view of London at daybreak is exceptionally beautiful. The city seems calm, bright, and harmonious because it is free from the usual movement and noise.</p><div class="quote">The poem asks us to pause and notice beauty where we might not expect to find it.</div></div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">03 · Study section 1 · Lines 1–4</div><div class="section-number">01</div><h2>Beauty beyond comparison</h2>
+      <div class="poem-layout"><div><div class="poem-lines">Earth has not anything to show more fair:
+Dull would he be of soul who could pass by
+A sight so touching in its majesty:
+This City now doth, like a garment, wear</div><div class="vocab"><h3>Vocabulary · this section</h3><div class="vocab-grid"><div class="word"><b>Fair</b>Beautiful; pleasing to look at.</div><div class="word"><b>Dull of soul</b>Insensible or unable to appreciate beauty.</div><div class="word"><b>Touching</b>Deeply moving; stirring emotion.</div><div class="word"><b>Majesty</b>Greatness, dignity, or impressive beauty.</div><div class="word"><b>Doth</b>An old-fashioned form of “does”.</div><div class="word"><b>Garment</b>A piece of clothing; here, a metaphorical covering.</div></div></div></div>
+      <div><div class="card"><h3>Meaning in simple English</h3><p>The speaker says that Earth has nothing more beautiful to show. Anyone who could walk past this sight without feeling moved would be emotionally insensitive. London is now wearing beauty like a piece of clothing.</p><h3>Explanation</h3><p>The opening is full of admiration. The city is personified as if it can dress itself in beauty. “Like a garment” suggests that the morning light seems to cover and transform London.</p><h3>Notice the technique</h3><p><b>Simile:</b> the city wears beauty “like a garment”. <b>Personification:</b> the city is presented as if it can wear clothing.</p></div></div></div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">04 · Study section 2 · Lines 5–8</div><div class="section-number">02</div><h2>A city open to the sky</h2>
+      <div class="poem-layout"><div><div class="poem-lines">The beauty of the morning; silent, bare,
+Ships, towers, domes, theatres and temples lie
+Open unto the fields, and to the sky;
+All bright and glittering in the smokeless air.</div><div class="vocab"><h3>Vocabulary · this section</h3><div class="vocab-grid"><div class="word"><b>Silent</b>Quiet; without sound.</div><div class="word"><b>Bare</b>Uncovered or unobstructed; here, clearly visible.</div><div class="word"><b>Domes</b>Rounded roofs on buildings.</div><div class="word"><b>Temples</b>Buildings used for worship.</div><div class="word"><b>Unto</b>An old-fashioned word meaning “to” or “towards”.</div><div class="word"><b>Glittering</b>Shining with reflected light.</div><div class="word"><b>Smokeless</b>Free from smoke or haze.</div></div></div></div>
+      <div><div class="card"><h3>Meaning in simple English</h3><p>In the still morning, the city’s ships and buildings are clearly visible. They seem to open out towards the fields and sky, shining brightly in clean air without smoke.</p><h3>Explanation</h3><p>The list of ships, towers, domes, theatres, and temples shows the variety of London’s skyline. “Silent, bare” does not mean the city is empty forever; it describes how peaceful and unobstructed it looks at this hour.</p><h3>Notice the technique</h3><p><b>Visual imagery:</b> the reader imagines buildings shining in the clear morning air. The list of structures creates a broad panorama.</p></div></div></div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">05 · Study section 3 · Lines 9–11</div><div class="section-number">03</div><h2>Light and deep calm</h2>
+      <div class="poem-layout"><div><div class="poem-lines">Never did sun more beautifully steep
+In his first splendour, valley, rock, or hill;
+Ne'er saw I, never felt, a calm so deep!</div><div class="vocab"><h3>Vocabulary · this section</h3><div class="vocab-grid"><div class="word"><b>Steep</b>To cover or bathe thoroughly in something; here, sunlight.</div><div class="word"><b>Splendour</b>Magnificent beauty or brilliance.</div><div class="word"><b>Ne’er</b>Poetic contraction of “never”.</div><div class="word"><b>Valley</b>Low land between hills or mountains.</div><div class="word"><b>Calm</b>Peacefulness; absence of disturbance.</div></div></div></div>
+      <div><div class="card"><h3>Meaning in simple English</h3><p>The speaker says that the rising sun has never lit up a valley, rock, or hill more beautifully. He has never seen or felt such profound peace before.</p><h3>Explanation</h3><p>Wordsworth usually associates beautiful scenes with nature. Here, the morning light makes London feel just as magnificent as natural landscapes. The exclamation expresses how strongly the stillness affects him.</p><h3>Notice the technique</h3><p><b>Comparison:</b> London is measured against valleys, rocks, and hills. <b>Sensory imagery:</b> the calm is not only seen but also felt.</p></div></div></div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">06 · Study section 4 · Lines 12–14</div><div class="section-number">04</div><h2>The sleeping city</h2>
+      <div class="poem-layout"><div><div class="poem-lines">The river glideth at his own sweet will:
+Dear God! the very houses seem asleep;
+And all that mighty heart is lying still!</div><div class="vocab"><h3>Vocabulary · this section</h3><div class="vocab-grid"><div class="word"><b>Glideth</b>An old-fashioned form of “glides”; moves smoothly.</div><div class="word"><b>Sweet will</b>Its own natural choice or unhurried course.</div><div class="word"><b>Very</b>Used for emphasis: the houses themselves.</div><div class="word"><b>Mighty</b>Powerful, great, or enormous.</div><div class="word"><b>Heart</b>Here, a metaphor for the busy centre or life of London.</div><div class="word"><b>Lying still</b>Remaining motionless and quiet.</div></div></div></div>
+      <div><div class="card"><h3>Meaning in simple English</h3><p>The River Thames flows smoothly and freely. Even the houses appear to be asleep. The great, powerful city—the “mighty heart”—is temporarily still.</p><h3>Explanation</h3><p>The river’s movement contrasts with the stillness of the buildings. Calling the city a “mighty heart” recognises London as a powerful, busy place, but at this moment it rests like a living being.</p><h3>Notice the technique</h3><p><b>Personification:</b> the houses seem asleep. <b>Metaphor:</b> London is a “mighty heart”. <b>Contrast:</b> the flowing river and the still city.</p></div></div></div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">07 · Literary appreciation</div><h2>How the poem creates its effect</h2><div class="theme-grid">
+        <div class="theme"><div class="symbol">✦</div><h3>Imagery</h3><p>Bright buildings, clean air, the river, and the open sky help readers picture the early-morning scene.</p></div>
+        <div class="theme"><div class="symbol">≈</div><h3>Personification</h3><p>The city wears beauty, houses seem asleep, and London becomes a “mighty heart”.</p></div>
+        <div class="theme"><div class="symbol">◇</div><h3>Simile &amp; metaphor</h3><p>Beauty is like a garment; the city’s life is imagined as a heart that has become still.</p></div>
+        <div class="theme"><div class="symbol">☼</div><h3>Contrast</h3><p>The normally busy city is quiet; the river moves while buildings appear motionless.</p></div>
+        <div class="theme"><div class="symbol">♫</div><h3>Tone</h3><p>Reverent, peaceful, amazed, and deeply appreciative.</p></div>
+        <div class="theme"><div class="symbol">◎</div><h3>Theme</h3><p>Beauty can appear in unexpected places when we slow down and pay attention.</p></div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="eyebrow">08 · Revision &amp; discussion</div><h2>Check your understanding</h2><div class="columns">
+        <div class="card"><h3>Key points to remember</h3><ul class="clean"><li>The poet is William Wordsworth (1770–1850).</li><li>The scene is London at dawn, viewed from Westminster Bridge.</li><li>The poem is a 14-line Petrarchan sonnet.</li><li>The city appears beautiful because the morning is clear and unusually quiet.</li><li>Personification, imagery, simile, metaphor, and contrast strengthen the description.</li></ul></div>
+        <div class="card"><h3>Think and answer</h3><ol class="clean"><li>Why does the speaker say that a person who ignores the view would be “dull of soul”?</li><li>What does the comparison “like a garment” suggest?</li><li>How does the poet describe the River Thames?</li><li>Explain the metaphor “that mighty heart”.</li><li>Why is the city’s silence important to the poem?</li></ol></div>
+      </div><div class="quote">Main message: the world can surprise us with beauty—even a great city can seem peaceful, natural, and full of wonder.</div>
+    </article>
+</section>
+  <div class="controls"><div class="navgroup"><button class="btn" id="prev" aria-label="Previous slide">← Previous</button><button class="btn primary" id="next" aria-label="Next slide">Next →</button></div><div class="dots" id="dots" aria-label="Slide navigation"></div><button class="btn" id="fullscreen" title="Toggle fullscreen">⛶ Fullscreen</button></div>
+  
+</main>
+<script>
+(() => {
+  const slides = [...document.querySelectorAll('.slide')];
+  const progress = document.getElementById('progress');
+  const counter = document.getElementById('counter');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  const dots = document.getElementById('dots');
+  let current = 0;
+  slides.forEach((_, i) => {
+    const b = document.createElement('button');
+    b.className = 'dot' + (i === 0 ? ' active' : '');
+    b.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    b.addEventListener('click', () => show(i));
+    dots.appendChild(b);
+  });
+  const dotButtons = [...dots.children];
+  function show(index) {
+    current = Math.max(0, Math.min(slides.length - 1, index));
+    slides.forEach((s, i) => { s.classList.toggle('active', i === current); });
+    dotButtons.forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+      if (i === current) d.setAttribute('aria-current', 'step');
+      else d.removeAttribute('aria-current');
+    });
+    progress.value = current;
+    progress.max = slides.length - 1;
+    counter.textContent = `${String(current + 1).padStart(2, '0')} / ${String(slides.length).padStart(2, '0')}`;
+    prev.disabled = current === 0;
+    next.disabled = current === slides.length - 1;
+  }
+  prev.addEventListener('click', () => show(current - 1));
+  next.addEventListener('click', () => show(current + 1));
+  progress.addEventListener('input', e => show(Number(e.target.value)));
+  document.addEventListener('keydown', e => {
+    if (['ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); show(current + 1); }
+    if (['ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); show(current - 1); }
+    if (e.key === 'Home') show(0);
+    if (e.key === 'End') show(slides.length - 1);
+  });
+  let startX = null;
+  document.querySelector('.stage').addEventListener('touchstart', e => { startX = e.changedTouches[0].clientX; }, {passive:true});
+  document.querySelector('.stage').addEventListener('touchend', e => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 65) show(current + (dx < 0 ? 1 : -1));
+    startX = null;
+  }, {passive:true});
+  document.getElementById('fullscreen').addEventListener('click', async () => {
+    try {
+      if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
+      else await document.exitFullscreen();
+    } catch (_) { alert('Fullscreen is not available in this browser.'); }
+  });
+
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('error', () => {
+      img.style.display = 'none';
+      const parent = img.parentElement;
+      if (parent && !parent.querySelector('.image-fallback')) {
+        const fallback = document.createElement('div');
+        fallback.className = 'image-fallback';
+        fallback.textContent = 'Image unavailable offline — use the image-credit links to view it online.';
+        fallback.style.cssText = 'display:flex;align-items:center;justify-content:center;min-height:180px;padding:24px;text-align:center;color:#52636b;background:#e8e3d8;font-size:.9rem;line-height:1.6;';
+        parent.appendChild(fallback);
+      }
+    }, { once: true });
+  });
+
+  show(0);
+})();
+</script>
+</body>
+</html>
